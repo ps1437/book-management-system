@@ -1,0 +1,325 @@
+img {
+	max-width: 100%;
+}
+
+.cf:before, .cf:after {
+	content: " ";
+	display: table;
+}
+
+.cf:after {
+	clear: both;
+}
+
+.cf {
+	*zoom: 1;
+}
+
+.wrap {
+	width: 75%;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 1% 0;
+	margin-bottom: 5em;
+}
+
+.projTitle {
+	font-weight: bold;
+	text-align: center;
+	font-size: 1.5em;
+	padding: .5em;
+	border-bottom: 1px solid #dadada;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 1.5em;
+	padding: .5em;
+	border-bottom: 1px solid #dadada;
+	letter-spacing: 3px;
+	font-size: 1.5em;
+	padding: .5em;
+	border-bottom: 1px solid #dadada;
+	letter-spacing: 3px;
+	padding: .5em;
+	border-bottom: 1px solid #dadada;
+	letter-spacing: 3px;
+	border-bottom: 1px solid #dadada;
+	letter-spacing: 3px;
+}
+
+.projTitle span {
+	font-family: 'Droid Serif', serif;
+	font-weight: normal;
+	font-style: italic;
+	text-transform: lowercase;
+	color: #777;
+}
+
+.heading {
+	padding: 1em 0;
+	border-bottom: 1px solid #d0d0d0;
+}
+
+.heading h1 {
+	font-family: 'Droid Serif', serif;
+	font-size: 2em;
+	float: left;
+}
+
+.tableHead {
+	display: table;
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.75em;
+}
+
+.tableHead li {
+	display: table-cell;
+	padding: 1em 0;
+	text-align: center;
+}
+
+.tableHead li.prodHeader {
+	text-align: left;
+}
+
+.cart .items {
+	display: block;
+	width: 100%;
+	vertical-align: middle;
+	padding: 0.2em;
+	border-bottom: 1px solid #fafafa;
+}
+
+.cart .items .infoWrap {
+	display: table;
+	width: 100%;
+}
+
+.cart .items .cartSection {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.cart .items .cartSection .itemNumber {
+	font-size: 0.75em;
+	color: #777;
+	margin-bottom: 0.5em;
+}
+
+.cart .items .cartSection h3 {
+	font-size: 1em;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.025em;
+}
+
+.cart .items .cartSection p {
+	display: inline-block;
+	font-size: 0.85em;
+	color: #777;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.cart .items .cartSection p .quantity {
+	font-weight: bold;
+	color: #333;
+}
+
+.cart .items .cartSection p.stockStatus {
+	color: #82ca9c;
+	font-weight: bold;
+	padding: 0.5em 0 0 1em;
+	text-transform: uppercase;
+}
+
+.cart .items .cartSection p.stockStatus.out {
+	color: #f69679;
+}
+
+.cart .items .cartSection .itemImg {
+	width: 4em;
+	float: left;
+}
+
+.cart .items .cartSection.qtyWrap, .cart .items .cartSection.prodTotal {
+	text-align: center;
+}
+
+.cart .items .cartSection.qtyWrap p, .cart .items .cartSection.prodTotal p
+	{
+	font-weight: bold;
+	font-size: 1.25em;
+}
+
+.cart .items .cartSection input.qty {
+	width: 2em;
+	text-align: center;
+	font-size: 1em;
+	padding: 0.25em;
+	margin: 1em 0.5em 0 0;
+}
+
+.cart .items .cartSection .itemImg {
+	width: 8em;
+	display: inline;
+	padding-right: 1em;
+}
+
+a.remove {
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+	font-weight: bold;
+	background: black;
+	padding: 0.5em;
+	font-size: 0.75em;
+	display: inline-block;
+	border-radius: 100%;
+	line-height: 0.85;
+	-webkit-transition: all 0.25s linear;
+	-moz-transition: all 0.25s linear;
+	-ms-transition: all 0.25s linear;
+	-o-transition: all 0.25s linear;
+	transition: all 0.25s linear;
+}
+
+.btn:link, .btn:visited {
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: -0.015em;
+	font-size: 1em;
+	padding: 0.5rem 1em;
+	color: #fff;
+	background: #82ca9c;
+	font-weight: bold;
+	border-radius: 50px;
+	float: right;
+	text-align: right;
+	-webkit-transition: all 0.25s linear;
+	-moz-transition: all 0.25s linear;
+	-ms-transition: all 0.25s linear;
+	-o-transition: all 0.25s linear;
+	transition: all 0.25s linear;
+}
+
+.btn:after {
+	content: "\276f";
+	padding: 0.5em;
+	position: relative;
+	right: 0;
+	-webkit-transition: all 0.15s linear;
+	-moz-transition: all 0.15s linear;
+	-ms-transition: all 0.15s linear;
+	-o-transition: all 0.15s linear;
+	transition: all 0.15s linear;
+}
+
+.btn:hover, .btn:focus, .btn:active {
+	background: #f69679;
+}
+
+.btn:hover:after, .btn:focus:after, .btn:active:after {
+	right: -10px;
+}
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+	height: "50px";
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+	height: "50px";
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888;
+	height: "50px";
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+	height: "50px";
+}
+
+.promoCode .btn {
+	font-size: 0.85em;
+	paddding: 0.5em 2em;
+}
+/* TOTAL AND CHECKOUT */
+.subtotal {
+	float: right;
+	width: 35%;
+}
+
+.subtotal .totalRow {
+	padding: 0.5em;
+	text-align: right;
+}
+
+.subtotal .totalRow.final {
+	font-size: 1.25em;
+	font-weight: bold;
+}
+
+.subtotal .totalRow span {
+	display: inline-block;
+	padding: 0 0 0 1em;
+	text-align: right;
+}
+
+.subtotal .totalRow .label {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.85em;
+	text-transform: uppercase;
+	color: #777;
+}
+
+.subtotal .totalRow .value {
+	letter-spacing: -0.025em;
+	width: 35%;
+}
+
+.addressForm {
+	margin: auto;
+	width: 50%;
+	padding: 10px;
+	margin-left: none !important
+}
+
+.payment {
+	width: 50%;
+	margin: auto;
+	background-color: #ffffff;
+}
+
+body {
+	background: rgba(255, 255, 255, 1);
+	background: -moz-linear-gradient(left, rgba(255, 255, 255, 1) 0%,
+		rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255, 255, 255,
+		1)), color-stop(47%, rgba(246, 246, 246, 1)),
+		color-stop(100%, rgba(237, 237, 237, 1)));
+	background: -webkit-linear-gradient(left, rgba(255, 255, 255, 1) 0%,
+		rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+	background: -o-linear-gradient(left, rgba(255, 255, 255, 1) 0%,
+		rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+	background: -ms-linear-gradient(left, rgba(255, 255, 255, 1) 0%,
+		rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+	background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%,
+		rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff',
+		endColorstr='#ededed', GradientType=1);
+}
+
+.address {
+	border: 1px solid darkgray;
+	padding: 0px 11px;
+	margin-bottom: 2rem;
+	text-transform: uppercase;
+}
