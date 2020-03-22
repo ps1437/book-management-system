@@ -100,6 +100,30 @@ a {
 	transition: all linear 0.1s;
 	transition: all ease-out 0.2s 0.1s;
 }
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+	height: "50px";
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+	height: "50px";
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888;
+	height: "50px";
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+	height: "50px";
+}
+
 </style>
 
 <link rel="stylesheet"
@@ -157,6 +181,13 @@ a {
 			</form>
 		</div>
 	</div>
-</body>
+</body><script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+	></script>
+<script
+	src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+	></script>
+<script
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+	></script>
 </html>
 

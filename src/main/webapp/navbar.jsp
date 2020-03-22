@@ -32,11 +32,11 @@
 		</ul>
 		<ul class="nav navbar-nav navbar-right my-2 my-lg-0">
 
-			<li style='padding: 0rem 1rem;'><span
-				class="fa fa-user badge badge-light icons"> Welcome
+			<li style='padding: 0rem 1rem;font-size: 1.4rem;'><span
+				class="fa fa-user-circle-o badge userName icons"> Welcome
 					${sessionScope.username}</span></li>
-			<li style='padding: 0rem 1rem;'><a href="nav?method=cart"
-				title="cart"><span
+			<li style='padding: 0rem 1rem; '><a
+				href="nav?method=cart" title="cart"><span
 					class="fa fa-shopping-cart badge badge-light icons">
 						${sessionScope.cartItem.size()}</span> </a></li>
 			<li style='padding: 0rem 1rem;'><a title="logout" id="logout"

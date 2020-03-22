@@ -1,8 +1,7 @@
-
-body{
+body {
 	font-family: 'Ubuntu', sans-serif;
-	
 }
+
 .fa-sign-out {
 	font-size: 2rem !important;
 	color: white;
@@ -15,14 +14,14 @@ body{
 	float: right;
 }
 
-.btn-outline-custome{
-border-radius: 50px;
-    width: 40%;
+.btn-outline-custome {
+	border-radius: 50px;
+	width: 40%;
 }
+
 .adminContainer {
 	height: 90%;
 	background-size: contain;
-	
 }
 
 .fa-sign-out {
@@ -36,7 +35,6 @@ border-radius: 50px;
 	color: white;
 	float: right;
 }
-
 
 .fa-sign-out {
 	font-size: 1.2rem !important;
@@ -45,6 +43,7 @@ border-radius: 50px;
 }
 
 .badge-light {
+	font-size: 1.4rem;
 	color: #0d1013;
 }
 
@@ -74,7 +73,7 @@ a {
 	text-decoration: none;
 	display: inline-block;
 	position: relative;
-	transition:all 0.5s ease;
+	transition: all 0.5s ease;
 }
 
 .itemName:after {
@@ -102,18 +101,34 @@ a {
 
 .navbar-brand:hover {
 	color: rgb(22, 145, 243) !important;
-	
 }
 
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+	height: "50px";
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+	height: "50px";
+}
 
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888;
+	height: "50px";
+}
 
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+	height: "50px";
+}
 
-
-
-
-
-
-
-
-
+@media screen and (max-width: 900px) {
+	.nav-link {
+		text-align: Center;
+	}
+}

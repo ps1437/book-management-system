@@ -1,12 +1,7 @@
-<div class="text-center bookstore">
-				<b>Welcome to Book Store</b>
-			</div>
-
-			<hr />
 <div class="text-center text-primary">
 	<b>Sign Up</b>
 </div>
-
+<hr />
 
 <form action="register" method="POST" onSubmit="return checkPwd()">
 	<div class="form-group">

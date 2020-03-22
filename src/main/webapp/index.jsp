@@ -12,28 +12,30 @@
 </head>
 <style>
 .login {
-    box-shadow: inset -150px -3px 0px white;
-    position: relative;
-    width: 350px !important;
-    color: black;
-    font-size: 1rem;
-    padding: 0.5rem 1.8rem;
-    background-color: #ffffff;
-    width: 100px;
-    height: 55%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    margin-top: 7rem;
-s
+	box-shadow: inset -150px -3px 0px white;
+	position: relative;
+	width: 350px !important;
+	color: black;
+	font-size: 1rem;
+	padding: 0.5rem 1.8rem;
+	background-color: #ffffff;
+	width: 100px;
+	height: 55%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	margin-top: 7rem;
+	    box-shadow: 3px 5px 10px #827f7f;
+	
 }
 
 body {
 	background-image:
 		url("https://source.unsplash.com/1600x900/?books,library");
+			font-family: 'Ubuntu', sans-serif;
 }
 
 .overlay {
@@ -55,7 +57,7 @@ body {
 .storename {
 	font-size: 2rem;
 	color: white;
-	float: right;
+	text-align: center;
 	position: relative;
 	padding: 17px;
 }
@@ -66,11 +68,12 @@ body {
 	border-radius: .25rem !important;
 	margin-bottom: 0 !important;
 	-webkit-transition: opacity 3s ease-in-out;
-    -moz-transition: opacity 3s ease-in-out;
-    -ms-transition: opacity 3s ease-in-out;
-    -o-transition: opacity 3s ease-in-out;
-     opacity: 1;
+	-moz-transition: opacity 3s ease-in-out;
+	-ms-transition: opacity 3s ease-in-out;
+	-o-transition: opacity 3s ease-in-out;
+	opacity: 1;
 }
+
 .btn:link, .btn:visited {
 	text-decoration: none;
 	font-family: 'Montserrat', sans-serif;
@@ -109,27 +112,47 @@ body {
 .btn:hover:after, .btn:focus:after, .btn:active:after {
 	right: -10px;
 }
+
+.vert-move {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+.vert-move {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+
+
 </style>
 
 
 
 <body>
 	<div class="overlay"></div>
-	<span class='storename'> <b>Book Store</b>
-	</span>
+	<div class='storename vert-move'>
+		<b>Welcome to Book Store</b>
+	</div>
 
 	<div class="container">
 
 		<div class="container login " id='login'>
-			<div class="text-center bookstore">
-				<b>Welcome to Book Store</b>
-			</div>
 
-			<hr />
+
+
 
 			<div class="text-center">
 				<b>Login</b>
 			</div>
+			<hr />
 			<c:if test="${not empty  requestScope.status}">
 
 
@@ -149,7 +172,8 @@ body {
 				</div>
 
 				<div class="text-center pull-right">
-					<button type="submit" class="btn btn-outline-primary  btn-outline-custome">Login</button>
+					<button type="submit"
+						class="btn btn-outline-primary  btn-outline-custome">Login</button>
 					<a href="#" onClick="switchTab('register')">Register Now</a>
 				</div>
 			</form>
@@ -166,15 +190,9 @@ body {
 
 </body>
 <script src="./static/app.js"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-	integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-	crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
 <script
-	src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-	integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-	crossorigin="anonymous"></script>
+	src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script
-	src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-	integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-	crossorigin="anonymous"></script>
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </html>
